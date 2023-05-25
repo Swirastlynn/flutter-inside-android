@@ -30,7 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.fab.setOnClickListener { view ->
             startActivity(
-                FlutterActivity.createDefaultIntent(this)
+                FlutterActivity
+                    .withCachedEngine("my_engine_id")
+                    .build(this)
             )
         }
     }
