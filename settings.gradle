@@ -17,10 +17,9 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "AndroidFlutterApp"
 include ':app'
 setBinding(new Binding([gradle: this]))                                // new
 evaluate(new File(                                                     // new
         settingsDir.parentFile,                                              // new
-        'AndroidFlutterApp/my_flutter/.android/include_flutter.groovy'                         // new
+        'flutter-inside-android/my_flutter/.android/include_flutter.groovy'                         // new
 ))
